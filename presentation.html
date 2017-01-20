@@ -14,8 +14,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/main.css">
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -150,52 +151,272 @@
 
                 </section>
 
-                 <section>
+                <section>
+                
+                    <h2>STN Data Portal <span class="publicHighlight">(Public)</span></h2>
+
+                    <div>
+                        
+                        <div class="left">
+                            <img height="500" data-src="images/stnDataPortal.PNG" alt="STN data portal">
+                        </div>
+
+                        <div class="right">
+                            <p class="fragment">Data access GUI</p>
+                            <br>
+                            <p class="fragment">for more casual users</p>
+                            <br>
+                            <p class="fragment">metadata only right now <i class="fa fa-frown-o" aria-hidden="true"></i> </p>
+                        </div>
+
                     
-                    <h5>STN Data Portal <span class="publicHighlight">(Public)</span></h5>
-
-                    <p>Data access GUI</p>
-
-                    <p class="fragment">for more casual users</p>
-
-                    <p class="fragment">allows user to download</p>
-
-                    <p class="fragment">metadata only right now *sad face* </p>
-
-                    <img height="250" data-src="images/image-placeholder.png" alt="STN data portal">
-                    
-        
-
+                    </div>
                 </section>
 
                 <section>
-                    
-                    <h5>STN Web Services <span class="publicHighlight">(Public)</span></h5>
 
-                    <p>Data access API</p>
+                   
+                    <h2>STN Web Services <span class="publicHighlight">(Public)</span></h2>
+                    <div>
+                        <div class="left">
+                            <img height="450" data-src="images/stnServicesDocs.PNG" alt="STN web services documentation page">
+                        </div>    
+                       
+                        <div class="right">
+                            <p class="fragment">Data access API</p>
+                            <br>
+                            <p class="fragment">for power users and developers</p>
+                        </div>
+                    </div>
 
-                    <p class="fragment">for power users and developers</p>
-
-                    <p class="fragment">metadata only right now *sad face* </p>
-
-                    <img height="250" data-src="images/image-placeholder.png" alt="STN web services documentation page">
-                    
-        
-                </section>
-
-                 <section>
-                    
-                    <h2>Legacy FEV</h2>
-
-                    <p>Version 1, born ~2012</p>
-
-                    <img height="250" data-src="images/image-placeholder.png" alt="STN v1">
+              
                     
         
                 </section>
 
+                <section data-background-image="images/stnThumbnail.PNG" data-background-size="contain">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                        <h2>Legacy FEV</h2>
+                        <p>Version 1, born ~2012</p>
+                    </div>
+        
+                </section>
+
+                <section data-background-image="images/FEVCap_replace.PNG" data-background-size="contain">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                        <h2>Flood Event Viewer</h2>
+                        <p>The Data</p>
+                    </div>
+        
+                </section>
 
 
+                <section> 
+                    <div style="float:left; width:33.3%">
+
+                        <h3><span style="text-transform:initial">Real-time</span></h3>
+
+                        <ul style="font-size:24pt" class="fragment">
+                                <span style=" display:inline-block;">
+                                    <img src="images/nwis.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Real-time Stream Gage<br>
+
+                                <span style=" display:inline-block;">
+                                    <img src="images/rdg.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Rapid Deployment Gage<br>
+        
+                        </ul>
+
+                    </div>
+
+                    <div style="float:left; width:33.3%">
+                         <h3><b><span style="text-transform:initial; font-weight:bold">Observed</b></span></h3>
+
+                        <p class="fragment">Sensors</p>
+                        <ul style="font-size:24pt" class="fragment">
+                            
+                                <span style=" display:inline-block;">
+                                    <img src="images/baro.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Barometric Pressure<br>
+
+                                <span style=" display:inline-block;">
+                                    <img src="images/stormtide.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Storm Tide<br>
+
+                                <span style=" display:inline-block;">
+                                    <img src="images/met.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Meteorological<br>
+
+                                <span style=" display:inline-block;">
+                                    <img src="images/waveheight.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Wave Height<br>
+
+                        </ul>
+                        <br>
+                        <br>
+                        <div class="fragment" >
+                             <p>Surveyed</p>
+                            <ul style="font-size:24pt">
+                                <span style=" display:inline-block;">
+                                        <img src="images/hwm.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> High-water Marks
+                            </ul>
+                        </div>
+                       
+
+                    </div>
+
+                    <div style="float:left; width:33.3%">
+                         <h3><span style="text-transform:initial">Interpreted</span></h3>
+
+                        <ul style="font-size:24pt" class="fragment">
+                                <span style=" display:inline-block;">
+                                    <img src="images/peak.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                </span> Peak Summary<br>
+        
+                        </ul>
+
+                    </div>
+                </section>
+
+                <section> 
+                   <h2><span style="text-transform:initial">Real-time Data</span></h2>
+
+                   <ul>
+                        <span style=" display:inline-block;">
+                            <img src="images/nwis.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Real-time Stream Gage<br>
+
+                        <span style=" display:inline-block;">
+                            <img src="images/rdg.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Rapid Deployment Gage<br>
+  
+                   </ul>
+                </section>
+
+                <!--<section data-background-image="images/rtLayer.PNG" data-background-size="45% auto" data-background-position="3em 50% no-repeat"> -->
+                <section> 
+                   <h2> <span style="text-transform:initial">Real-time Stream Gage layer</span></h2>
+
+                    <div>
+                        <img height="475" data-src="images/rtLayer.PNG" alt="Real-time streamgages layer">  
+                    </div>
+
+                    <p class="no-margin" style="margin:0px;">uses NWIS web services</p>
+                     <!--<div style="background-image: url(images/rtLayer.PNG); height: 550px;  background-repeat: no-repeat; left:50%">-->
+                </section>
+
+
+                 <section> 
+                   <h2><span style="text-transform:initial">Rapid deployment Gage layer</span></h2>
+
+                    <div>
+                        <img height="425" data-src="images/rdgLayer.PNG" alt="Real-time streamgages layer">  
+                    </div>
+
+                    <p class="no-margin" style="margin:0px;">metadata in STN - time series data in NWIS</p>
+
+                </section>
+
+
+                <section> 
+                   <h2><span style="text-transform:initial">Observed Data</span></h2>
+
+                   <p>Sensors</p>
+                   <ul>
+                       
+                        <span style=" display:inline-block;">
+                            <img src="images/baro.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Barometric Pressure<br>
+
+                        <span style=" display:inline-block;">
+                            <img src="images/stormtide.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Storm Tide<br>
+
+                         <span style=" display:inline-block;">
+                            <img src="images/met.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Meteorological<br>
+
+                         <span style=" display:inline-block;">
+                            <img src="images/waveheight.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Wave Height<br>
+
+                   </ul>
+                   <br>
+                   <br>
+                   <p>Surveyed</p>
+                    <span style=" display:inline-block;">
+                            <img src="images/hwm.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> High-water Marks
+                </section>
+
+
+                 <section> 
+                   <h2> <span style="text-transform:initial">Sensor layers</span></h2>
+
+                    <div>
+                        <img height="475" data-src="images/sensorLayers.PNG" alt="Peak summary layer">  
+                    </div>
+
+                </section>
+
+                <section data-background-image="images/sensorDataPage.PNG" data-background-size="contain"> 
+                   <div class="fragment"style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                       <ul>
+                           <li >metadata</li>
+                           <li class="fragment">raw data files</li>
+                           <li class="fragment">photos</li>
+                       </ul>
+                        
+                    </div>
+
+                </section>
+
+                 <section> 
+                   <h2> <span style="text-transform:initial">High-water Mark layer</span></h2>
+
+                    <div>
+                        <img height="425" data-src="images/hwmLayer.PNG" alt="High-water mark layer">  
+                    </div>
+
+                    <p class="no-margin" style="margin:0px;">observed & surveyed</p>
+                    <p class="no-margin" style="margin:0px;">historic HWM effort underway</p>
+
+                </section>
+
+                <section> 
+                   <h2><span style="text-transform:initial">Interpreted Data</span></h2>
+
+                   <ul>
+                        <span style=" display:inline-block;">
+                            <img src="images/peak.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                        </span> Peak Summary<br>
+  
+                   </ul>
+                </section>
+
+                <section> 
+                   <h2> <span style="text-transform:initial">Peak Summary layer</span></h2>
+
+                    <div>
+                        <img height="400" data-src="images/peakLayer.PNG" alt="Peak summary layer">  
+                    </div>
+
+                    <p class="no-margin" style="margin:0px;">calculated after the event</p>
+                    <p class="no-margin" style="margin:0px;">determined by storm tide sensors</p>
+                     <!--<div style="background-image: url(images/rtLayer.PNG); height: 550px;  background-repeat: no-repeat; left:50%">-->
+                </section>
+
+                 <section data-background-image="images/fevSensors.PNG" data-background-size="contain"> 
+                
+
+                </section>
+
+
+
+                 
 
             </div>
         </div>
