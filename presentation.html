@@ -37,19 +37,23 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
+                <section id="title" data-background-image="images/fevcap.PNG" data-background-size="contain" data-state="dimbg2">
+
+                    <img height="150" data-src="images/USGSlogo_tag_white_600w.gif" alt="USGS logo"  style="margin:30px;background:none;border:none;box-shadow:none;">
+                    <br>
                     <h3>Event-based Flood Data Collection and Dissemination</h2>
 
-                    <img height="250" data-src="images/FEVCap_replace.PNG" alt="FEV screenshot">
+                    <!--<img height="250" data-src="images/fevcap.PNG" alt="FEV screenshot">-->
 
 
                     <p>The USGS Flood Event Viewer and Short-Term Network database</p>
                     <p>
                         <small>Presented by <a href="https://www.linkedin.com/in/blakedraper/">Blake Draper</a> - <a href="https://github.com/usgs-wim">USGS Web Informatics and Mapping (WiM)</a></small>
                     </p>
+                     <img height="50" data-src="images/wimlogoCompact.png" alt="WiM logo"  style="margin:30px;background:none;border:none;box-shadow:none;">
                 </section>
 
-                <section>
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h2>Short-Term Network (STN)</h2>
 
                     <h6>What is it?</h6>
@@ -58,95 +62,69 @@
                     <br>
                     <br>
 
-                    <p class="fragment">FEV is the <span class="publicHighlight">public</span> data viewing tool for the STN database</p>
+                    <p class="fragment">FEV is the <span class="fragment highlight-green">public</span> data viewing tool for the STN database</p>
 
 
                 </section>
 
-                 <section>
+                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h2>Short-Term Network (STN)</h2>
 
                     <h6>What's with the name?</h6>
 
                     <ul>
-                        <li><p class="fragment">fulfills a need: 'short-term', temporary data sensors </p></li>
+                        <li><p class="fragment">fulfills a need: <span style="font-weight: bold">short-term</span>, temporary data sensors </p></li>
 
                         <li><p class="fragment">supplements USGS 'long-term' station network</p></li>
 
-                        <li><p class="fragment">designed for flooding events</p></li>
+                       
                     </ul>
 
 
                 </section>
 
 
-                <section>
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h2>Short-Term Network (STN)</h2>
 
                     <h6>Why is it needed?</h6>
 
                     <ul>
+                        <li><p class="fragment">flooding events</p></li>
+
                         <li><p class="fragment">standardize data collection </p></li>
 
                         <li><p class="fragment">new repository for historical high-water marks</p></li>
 
-                        <li><p class="fragment">evolved into a suite of products </p></li>
                     </ul>
+                    <p class="fragment fade-up"><i>...has evolved into a suite of products</i></p>
 
                 </section>
 
 
-                <section data-background-image="images/ireneMapper.PNG" data-background-size="contain">
+                <section >
                     
-                    <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-                        <!-- <h2>Short-Term Network (STN)</h2>
-                        <h6>Origins</h6> -->
-                        <p>Hurricane Irene Mapper (2011)</p>
-                    </div>
+                    <h6>The STN Universe</h6>
+
+
+                     <img height="600" data-src="images/STN_universe_ext.png" alt="STN universe">
+                
 
                 </section>
 
-                <section>
+                 
+
+
+                 <section data-background-image="images/stn_map.PNG" data-background-size="contain" data-state="dimbg2">
                     
-                    <h2>Event-Centrism</h2>
+                    <h2>STNWeb <span class="internalHighlight">(Internal)</span></h2>
 
-                     <img height="250" data-src="images/selectEvt_dropdwn.PNG" alt="FEV screenshot">
+                    <label>Internal data management application</label>
 
-
-                    <!-- <ul> -->
-                      <!--   <li><p class="fragment">all data associated with an event </p></li>
-
-                        <li><p class="fragment">Water Science Centers and the press want event-focused map</p></li> -->
-
-                        <p class="fragment">all data gets associated with an event </p>
-
-                        <p class="fragment">Water Science Centers and the press want event-focused map</p>
-
-
-                    <!-- </ul> -->
-
-                </section>
-
-                 <section>
-                    
-                    <h2>The STN Universe</h2>
-
-                     <img height="450" data-src="images/image-placeholder.png" alt="STN universe">
-                     <p>diagram of STN universe</p>
-
-                </section>
-
-
-                 <section>
-                    
-                    <h5>STNWeb <span class="internalHighlight">(Internal)</span></h5>
-
-                    <p>Internal data management application</p>
-
-                    <img height="250" data-src="images/image-placeholder.png" alt="STN universe">
-                    <img height="250" data-src="images/image-placeholder.png" alt="STN universe">
-                    <br>
-                    <img height="250" data-src="images/image-placeholder.png" alt="STN universe">
+                    <img class="fragment" height="325" data-src="images/stn_site.PNG" alt="STNWeb site">
+                    <img class="fragment" height="325" data-src="images/stn_hwm.PNG" alt="STNWeb HWM">
+                    <!--<br>-->
+                    <!--<img height="250" data-src="images/stn_map.PNG" alt="STNWeb map">-->
         
 
                 </section>
@@ -164,7 +142,7 @@
                         <div class="right">
                             <p class="fragment">Data access GUI</p>
                             <br>
-                            <p class="fragment">for more casual users</p>
+                            <p class="fragment">for casual users</p>
                             <br>
                             <p class="fragment">metadata only right now <i class="fa fa-frown-o" aria-hidden="true"></i> </p>
                         </div>
@@ -194,7 +172,17 @@
         
                 </section>
 
-                <section data-background-image="images/stnThumbnail.PNG" data-background-size="contain">
+                 <section data-background-image="images/ireneMapper.PNG" data-background-size="contain">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px;">
+                        <!-- <h2>Short-Term Network (STN)</h2>
+                        <h6>Origins</h6> -->
+                        <p>Hurricane Irene Mapper (2011)</p>
+                    </div>
+
+                </section>
+
+                <section data-background-image="images/stnThumbnail.PNG" data-background-size="contain" data-transition="convex">
                     
                     <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
                         <h2>Legacy FEV</h2>
@@ -203,7 +191,7 @@
         
                 </section>
 
-                <section data-background-image="images/FEVCap_replace.PNG" data-background-size="contain">
+                <section data-background-image="images/fevcap.PNG" data-background-size="contain" data-transition="slide">
                     
                     <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
                         <h2>Flood Event Viewer</h2>
@@ -212,19 +200,39 @@
         
                 </section>
 
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
+                    
+                    <h2>Event-Centrism</h2>
 
-                <section> 
+                     <img height="300" data-src="images/selectEvt_dropdwn.PNG" alt="FEV screenshot">
+
+
+                    <!-- <ul> -->
+                      <!--   <li><p class="fragment">all data associated with an event </p></li>
+
+                        <li><p class="fragment">Water Science Centers and the press want event-focused map</p></li> -->
+
+                        <p class="fragment">all data gets associated with an event </p>
+
+                        <p class="fragment">Water Science Centers and the press want event-focused map</p>
+
+
+                    <!-- </ul> -->
+
+                </section>
+
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                     <div style="float:left; width:33.3%">
 
                         <h3><span style="text-transform:initial">Real-time</span></h3>
 
                         <ul style="font-size:24pt" class="fragment">
                                 <span style=" display:inline-block;">
-                                    <img src="images/nwis.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                    <img src="images/nwis.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                                 </span> Real-time Stream Gage<br>
 
                                 <span style=" display:inline-block;">
-                                    <img src="images/rdg.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                    <img src="images/rdg.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                                 </span> Rapid Deployment Gage<br>
         
                         </ul>
@@ -234,33 +242,37 @@
                     <div style="float:left; width:33.3%">
                          <h3><b><span style="text-transform:initial; font-weight:bold">Observed</b></span></h3>
 
-                        <p class="fragment">Sensors</p>
-                        <ul style="font-size:24pt" class="fragment">
-                            
-                                <span style=" display:inline-block;">
-                                    <img src="images/baro.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
-                                </span> Barometric Pressure<br>
+                         <div class="fragment">
+                             <p>Sensors</p>
+                                <ul style="font-size:24pt">
+                                    
+                                        <span style=" display:inline-block;">
+                                            <img src="images/baro.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
+                                        </span> Barometric Pressure<br>
 
-                                <span style=" display:inline-block;">
-                                    <img src="images/stormtide.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
-                                </span> Storm Tide<br>
+                                        <span style=" display:inline-block;">
+                                            <img src="images/stormtide.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
+                                        </span> Storm Tide<br>
 
-                                <span style=" display:inline-block;">
-                                    <img src="images/met.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
-                                </span> Meteorological<br>
+                                        <span style=" display:inline-block;">
+                                            <img src="images/met.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
+                                        </span> Meteorological<br>
 
-                                <span style=" display:inline-block;">
-                                    <img src="images/waveheight.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
-                                </span> Wave Height<br>
+                                        <span style=" display:inline-block;">
+                                            <img src="images/waveheight.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
+                                        </span> Wave Height<br>
 
-                        </ul>
+                                </ul>
+                         </div>
+
+                        
                         <br>
                         <br>
                         <div class="fragment" >
                              <p>Surveyed</p>
                             <ul style="font-size:24pt">
                                 <span style=" display:inline-block;">
-                                        <img src="images/hwm.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                        <img src="images/hwm.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                                 </span> High-water Marks
                             </ul>
                         </div>
@@ -273,7 +285,7 @@
 
                         <ul style="font-size:24pt" class="fragment">
                                 <span style=" display:inline-block;">
-                                    <img src="images/peak.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                                    <img src="images/peak.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                                 </span> Peak Summary<br>
         
                         </ul>
@@ -281,27 +293,27 @@
                     </div>
                 </section>
 
-                <section> 
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2><span style="text-transform:initial">Real-time Data</span></h2>
 
                    <ul>
                         <span style=" display:inline-block;">
-                            <img src="images/nwis.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                            <img src="images/nwis.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                         </span> Real-time Stream Gage<br>
 
                         <span style=" display:inline-block;">
-                            <img src="images/rdg.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                            <img src="images/rdg.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                         </span> Rapid Deployment Gage<br>
   
                    </ul>
                 </section>
 
-                <!--<section data-background-image="images/rtLayer.PNG" data-background-size="45% auto" data-background-position="3em 50% no-repeat"> -->
-                <section> 
+            
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2> <span style="text-transform:initial">Real-time Stream Gage layer</span></h2>
 
                     <div>
-                        <img height="475" data-src="images/rtLayer.PNG" alt="Real-time streamgages layer">  
+                        <img height="485" data-src="images/rtLayer.PNG" alt="Real-time streamgages layer">  
                     </div>
 
                     <p class="no-margin" style="margin:0px;">uses NWIS web services</p>
@@ -309,7 +321,7 @@
                 </section>
 
 
-                 <section> 
+                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2><span style="text-transform:initial">Rapid deployment Gage layer</span></h2>
 
                     <div>
@@ -321,7 +333,7 @@
                 </section>
 
 
-                <section> 
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2><span style="text-transform:initial">Observed Data</span></h2>
 
                    <p>Sensors</p>
@@ -353,7 +365,7 @@
                 </section>
 
 
-                 <section> 
+                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2> <span style="text-transform:initial">Sensor layers</span></h2>
 
                     <div>
@@ -361,22 +373,10 @@
                     </div>
 
 
-
-                    <div class="sl-block" data-block-type="text" data-block-id="032ea35b8cfb4c8d7b60d36519e5f7c1" style="height: auto; min-width: 30px; min-height: 30px; width: 359px; left: 560px; top: 45px;">
-                        <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; padding: 20px; font-size: 120%; border: 2px solid black; color: rgb(255, 255, 255); transition-duration: 0.6s; transition-delay: 0.6s; background-color: rgb(13, 5, 36);" data-animation-type="slide-left">
-                            <p style="text-align: right;"><span style="font-size:0.9em">It appears that</span></p>
-
-                            <p style="text-align: right;"><span style="font-size:0.9em"><strong>Javascript's</strong> doin a</span></p>
-
-                            <p style="text-align: right;"><span style="font-size:1.4em"><em>NEW THANG</em></span></p>
-                        </div>
-                    </div>
-
-
                 </section>
 
                 <section data-background-image="images/sensorDataPage.PNG" data-background-size="contain"> 
-                   <div class="fragment"style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+                   <div class="fragment" width="500px" style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 10px; width:500px; margin:0 auto;">
                        <ul>
                            <li >metadata</li>
                            <li class="fragment">raw data files</li>
@@ -387,7 +387,7 @@
 
                 </section>
 
-                 <section> 
+                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2> <span style="text-transform:initial">High-water Mark layer</span></h2>
 
                     <div>
@@ -399,18 +399,18 @@
 
                 </section>
 
-                <section> 
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2><span style="text-transform:initial">Interpreted Data</span></h2>
 
                    <ul>
                         <span style=" display:inline-block;">
-                            <img src="images/peak.png" style="margin:0;background:none;border:none;b0x-shadow:none;"></img>
+                            <img src="images/peak.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
                         </span> Peak Summary<br>
   
                    </ul>
                 </section>
 
-                <section> 
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                    <h2> <span style="text-transform:initial">Peak Summary layer</span></h2>
 
                     <div>
@@ -427,7 +427,7 @@
 
                 </section>
 
-                <section> 
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                   <h2>Getting Data</h2>
 
                     <div>
@@ -447,21 +447,21 @@
 
                 </section>
 
-                 <section data-background-image="images/FEVCap_replace.PNG" data-background-size="contain">
+                 <section data-background-image="images/fevcap.PNG" data-background-size="contain">
                     
-                    <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px;">
+                    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 5px;width:750px; margin:0 auto;">
                         <h2>Flood Event Viewer</h2>
                         <p>The Release</p>
                     </div>
 
-                    <div class="fragment" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; margin:10px">
+                    <div class="fragment" style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 5px; margin:10px">
                         Original plan: late October/early November 2016
                     </div>
         
                 </section>
 
                 
-                <section data-background-image="images/matthew.jpg" data-background-size="contain">
+                <section data-background-image="images/evilMatthew.jpg" data-background-size="contain">
                     <div class="fragment" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px;">
                         <p>USGS Storm Team activated October 3rd</p>
                     </div>
@@ -473,44 +473,66 @@
                     </div>
                 </section>
 
-                <section data-background-image="images/evilMatthew.jpg" data-background-size="contain">
-                    <div class="fragment" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 0px; width:600px; position:absolute; top:95px;">
+                <section data-background-image="images/matthew.jpg" data-background-size="contain">
+                    <div class="fragment" style="background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 0px; width:600px;  margin:0 auto;">
                         <p>Matthew arrives October 7th</p>
+                    </div>
+
+                     <div class="fragment" style="background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 0px; width:750px;  margin:0 auto;">
+                        <p>largest deployment since Hurricane Sandy</p>
+                    </div>
+
+                     <div class="fragment" style="background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 0px; width:600px;  margin:0 auto;">
+                        <p>300+ sensors</p>
                     </div>
                 </section>
 
-                <section>
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h3>Success and Publicity</h3>
                     <p class>used by USGS storm team on daily coordination calls</p>
                     <div class="fragment">
-                         <img  height="300" data-src="images/lowryFEVTweet.PNG" alt="STN universe">
+                         <img  height="300" data-src="images/lowryFEVTweet.PNG" alt="Lowry tweet">
                     <p>tweeted by The Weather Channel's hurricane specialist</p>
                     </div>
-                    <p class="fragment">featured on WJXT News 4 Jax in Jacksonville, FL</p>
                 </section>
 
-                <section>
+                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
+                    <h3>Success and Publicity</h3>
+                    <div>
+                         <img  height="350" data-src="images/news4jax.gif" alt="News 4 jax screenshot">
+            
+                    </div>
+                    <p>featured on WJXT News 4 Jax in Jacksonville, FL</p>
+                </section>
+
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h3>Audience</h3>
                     <p class="fragment">used extensively by USGS personnel</p>
                     <p class="fragment">designed with public in mind</p>
                 </section>
 
-                <section>
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h3>Work in progress</h3>
                     <p>still making improvements</p>
                     <p class="fragment">UI/UX challenges</p>
                     <p class="fragment">multi-event view is a challenge</p>
                 </section>
 
-                <section>
+                <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h2>Conclusion</h2>
                     <p class="fragment">successful at its critical function</p>
                     <p class="fragment">room for improvement</p>
                     <p class="fragment">must avoid scope creep</p>
                 </section>
 
-                <section>
-                    <h2>Questions</h2>
+                <section data-background-image="images/USGSlogo_tag_white_600w.gif" data-background-size="contain" data-state="dimbg">
+                    <h1>Questions</h1>
+
+                    <p>FEV:<a href="http://stn.wim.usgs.gov/fev"> stn.wim.usgs.gov/fev </a><br>#{event name} to link directly to event</p>
+
+                    <p>Short-Term Network Questions: Marie Peppler</p>
+
+                    <img height="100" data-src="images/wimlogoCompact.png" alt="WiM logo"  style="margin:30px;background:none;border:none;box-shadow:none;">
                     
                 </section>
 
@@ -518,7 +540,13 @@
         </div>
         <script src="js/reveal.js"></script>
         <script>
-            Reveal.initialize();
+            Reveal.initialize({
+                // Display the page number of the current slide
+                slideNumber: true,
+                // Push each slide change to the browser history
+                history: true,
+
+            });
         </script>
     </body>
 </html>
