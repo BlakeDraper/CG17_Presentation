@@ -68,40 +68,32 @@
                     </aside>
                 </section>
 
-                <section>
-                    <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
-                        <h2>Short-Term Network (STN)</h2>
-                        <h6>What is it?</h6>
+                
+                <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
+                    <h2>Short-Term Network (STN)</h2>
+                    <h6>What is it?</h6>
 
-                         <div style=" width:100%; margin:0 auto;">
-                            <div  style="float:left; width:30%;"> <img  data-src="images/stn_sites.PNG" alt="STN sites network">   </div>
-                            <div style="float:left; width:70%;">
-                                <ul>
-                                 <li><p class="fragment" style="padding-left: 5px;">a system for collection, management and dissemination of USGS flood data </p></li>
-                                <li><p class="fragment">a network of sites where sensors are deployed </p> </li>
-                                </ul>   
-                                <p class="fragment">FEV is the <span class="fragment highlight-green">public</span> data viewing tool for the STN database</p>
-                             </div>
-                        </div>
-    
-                        <aside class="notes">
+                        <div style=" width:100%; margin:0 auto;">
+                        <div  style="float:left; width:30%;"> <img  data-src="images/stn_sites.PNG" alt="STN sites network">   </div>
+                        <div style="float:left; width:70%;">
                             <ul>
-                                <li>STN is a system (database and suite of products) that collects, manages and disseminates data during and after hazardous flooding events</li>
-                                <li>FEV is the Flood Event Viewer and it is the public data viewing tool for the STN database</li>
-                                <li></li>
-                            <ul>
-                        </aside>
-                     </section>
-
-                    <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
-
-                            <p>a network of sites where sensors are deployed</p>
-                            <div>
-                                <img height="400" data-src="images/stn_map.PNG" alt="Peak summary layer">  
+                                <li><p class="fragment" style="padding-left: 5px;">a system for collection, management and dissemination of USGS flood data </p></li>
+                            <li><p class="fragment">a network of sites where sensors are deployed </p> </li>
+                            </ul>   
+                            <p class="fragment">FEV is the <span class="fragment highlight-green">public</span> data viewing tool for the STN database</p>
                             </div>
+                    </div>
 
+                    <aside class="notes">
+                        <ul>
+                            <li>STN is a system (database and suite of products) that collects, manages and disseminates data during and after hazardous flooding events</li>
+                            <li>also, it is literally a network of sites where sensrs are deployed</li>
+                            <li>FEV is the Flood Event Viewer and it is the public data viewing tool for the STN database</li>
+                        <ul>
+                    </aside>
                     </section>
-                </section>
+
+                 
 
                 
 
@@ -187,13 +179,15 @@
                             <br>
                             <p >for casual users</p>
                             <br>
-                            <p>metadata only right now <i class="fa fa-frown-o" aria-hidden="true"></i> </p>
+                            <p>sensor metadata only right now <i class="fa fa-frown-o" aria-hidden="true"></i> </p>
                         </div>
                     </div>
 
                      <aside class="notes">
                          <ul>
-                            <li>Was created 2 years ago in response to the need for downloadable data</li>
+                            <li>graphical user interface for data access</li>
+                            <li>for casual users, or who those who just need a speadsheet</li>
+                            <li>sensor data files not included at this time</li>
                         <ul>
                     </aside>
                 </section>
@@ -218,7 +212,6 @@
                             <li>full documentation for data access API</li>
                             <li>used by STNWeb and FEV but made available to all for easy data access</li>
                             <li>we encourage people to leverage the web services to build their own applications that suit specific needs. </li>
-                            <li>STN gets data directly from USGS technicians and makes it available for wide use as soon as it is uploaded.</li>
                         <ul>
                     </aside>
                 </section>
@@ -230,7 +223,8 @@
                         <p>Brief History</p>
                     </div>
                      <aside class="notes">
-                         Now FEV. start with a brief history
+                         Now FEV. start with a brief history<br>
+                         ...FEV had a few predecessors
                     </aside>
                 </section>
 
@@ -250,9 +244,9 @@
 
                 <section data-background-image="images/stnThumbnail.PNG" data-background-size="contain" data-transition="convex">
                     
-                    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; width: 600px; margin:0 auto;">
-                        <h2>Legacy FEV</h2>
-                        <p>Version 1, born ~2012</p>
+                    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; width: 800px; margin:0 auto;">
+                        <h2>Flood Event Viewer 1.0</h2>
+                        <p>born ~2012</p>
                         <p>originally 'STN Public'</p>
                     </div>
                      <aside class="notes">
@@ -287,7 +281,6 @@
                      <aside class="notes">
                          <ul>
                             <li>The STN universe promotes the event as the central organizing concept. All sensor deployments, peak summaries and HWMs are associated with an event. </li>
-                            <li>FEV will only show data based on a single event, and will not show data without an event chosen. </li>
                             <li>Both the Water Science Centers and the press generally want an event-focused map during an event</li>
                             <li>STN is designed to be event-centric from the bottom up. </li>
                         <ul>
@@ -409,7 +402,9 @@
                     <div style=" width:100%; margin:0 auto; "> <p class="no-margin" style="margin:0px;">metadata in STN - time series data in NWIS</p></div>
                      <aside class="notes">
                          <ul>
-                            <li> somewhat a hybrid type sensor - tracked in STN DB but actual data is stored in NWIS</li>
+                            <li> somewhat a hybrid type sensor - metadata tracked in STN DB but actual time-series data is stored in NWIS</li>
+                            <li> temporary streamgage deployed in advance of an anticipated event</li>
+                            <li> illustrates the short-term concept</li>
                         <ul>
                     </aside>
                 </section>
@@ -444,12 +439,7 @@
                         </span> High-water Marks
 
                     <aside class="notes">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    <ul>
-
+                
                     </aside>
                 </section>
 
@@ -465,7 +455,7 @@
                             <div style=" width:100%; margin:0 auto; "> <p class="no-margin" style="margin:0px;">non-transmitting - must be deployed and retrieved</p></div>
                              <aside class="notes">
                                     <ul>
-                                        <li>Observed category covers all the STN sensors aside from RDGs. </li>
+                                        <li>Storm-time, Barometric pressure, Meteorological, Wave Height </li>
                                         <li>non-transmitting so must be deployed and retrieved. </li>
                                         <li>begin to appear after they have been entered in STN DB, but do not have data until they are retrieved and data files uploaded</li>
                                          <li>overlap on map exists because of the Site-based concept of STN - re-usable sites at which instruments are deployed. In some cases multiple instruments are deployed at the same site for the same storm </li>
@@ -502,7 +492,6 @@
                             <li>All items in observed data category have data page</li>
                             <li>permanent, dedicated, shareable page with all the publicly available data for the sensor.</li>
                             <li>Page includes: 1)Metadata 2)Raw data files3) Photos </li>
-                            <li>We are working to improve these pages to provide better visualization</li>
                         <ul>
                     </aside>
                 </section>
@@ -555,7 +544,6 @@
                          <ul>
                             <li>Peak summaries are calculated after the event and provide the peak water level for that event at that site. Generally found where there were storm tide sensors deployed</li>
                             <li>The peaks are the interpreted final dataset that illustrate the maximum water elevation for the chosen event - a combination of several pieces of data</li>
-                            <li>All other data in STN are direct measurements (non-interpretive data)</li>
                         <ul>
                     </aside>
                 </section>
@@ -579,7 +567,6 @@
                      <aside class="notes">
                          <ul>
                             <li>Allows user to download the data they see on the map as CSV file or view the data in JSON format directly from the web services</li>
-                            <li>Merges much of the capability of the STN Data portal, except for single event caveat. We provide link to STN Data portal to provide broader data retrieval capability (i.e. multiple events)</li>
                         <ul>
                     </aside>
                 </section>
@@ -591,7 +578,7 @@
 
                      <div style="float:left; width:33.3%;">
 
-                          <h6 class="fragment grow"><span style="text-transform:initial">Database</span></h6>
+                          <h6 ><span style="text-transform:initial">Database</span></h6>
                         
                           <div class="fragment">
                     
@@ -602,7 +589,7 @@
                     </div>
 
                     <div style="float:left; width:33.3%;" >
-                         <h6 class="fragment grow"><b><span style="text-transform:initial; font-weight:bold">Service layer</b></span></h6>
+                         <h6><b><span style="text-transform:initial; font-weight:bold">Service layer</b></span></h6>
 
                          <div class="fragment">
                              <img src="images/asp.net.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
@@ -610,7 +597,7 @@
                     </div>
 
                     <div style="float:left; width:33.3%">
-                         <h6 class="fragment grow"><span style="text-transform:initial">Client</span></h6>
+                         <h6 ><span style="text-transform:initial">Client</span></h6>
 
                          <div class="fragment">
                             <img src="images/leafletlogo.png" style="margin:0;background:none;border:none;box-shadow:none;"></img>
@@ -625,8 +612,9 @@
                      <aside class="notes">
                          <ul>
                             <li>Service oriented architecture - 3 tiers</li>
+                             <li>Client-side rendering of points using leaflet, fed by web service calls</li>
                             <li>Started with Angular2, but learned we had adopted too early</li>
-                            <li>Client-side rendering of points using leaflet, fed by web service calls</li>
+                           
                         <ul>
                     </aside>
                 </section>
@@ -644,13 +632,9 @@
 
                      <aside class="notes">
                          <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li> Original plan: late October/early November 2016</li>
                         <ul>
-
                     </aside>
-        
                 </section>
 
                 
@@ -668,11 +652,11 @@
                      <aside class="notes">
                          <ul>
                             <li>then this happened</li>
-                            <li>storm team activated Oct 3rd</li>
+                            <li>USGS storm team activated Oct 3rd</li>
                             <li>we did not want use the older v1 FEV as the face of the storm for the USGS </li>
+                            <li>released alpha version 2 later that day</li>
                             <li>Accelerated the release</li>
                         <ul>
-
                     </aside>
                 </section>
 
@@ -731,7 +715,7 @@
 
                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h2>Audience</h2>
-                    <p class="fragment">used extensively by USGS personnel</p>
+                    <p>used extensively by USGS personnel</p>
                     <p class="fragment">designed with public in mind</p>
                      <aside class="notes">
                          <ul>
@@ -745,15 +729,13 @@
                     <h2>Work in progress</h2>
                     <p>still making improvements</p>
                     <p class="fragment">UI/UX challenges</p>
-                    <p class="fragment">multi-event view is a challenge</p>
+                    <p class="fragment">multi-event view is a UI challenge</p>
 
                      <aside class="notes">
                          <ul>
                             <li>releasing improvements as they become available</li>
-                            <li>challenges:Multi-event display without sacrifice of the user experience</li>
-                            <li>Event-centrism is a strength but also a weakness - biggest change will be allowing multiple event selection for comparison purposes</li>
-                            <li>complaints: NWIS real-time gage layer takes too long to load (user probably at the wrong scale) </li>
-                            
+                             <li>complaints: NWIS real-time gage layer takes too long to load (user probably at the wrong scale) </li>
+                            <li>challenges:Multi-event display without sacrifice of the user experience</li>              
                         <ul>
                     </aside>
                 </section>
