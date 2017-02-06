@@ -68,21 +68,42 @@
                     </aside>
                 </section>
 
-                <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
-                    <h2>Short-Term Network (STN)</h2>
-                    <h6>What is it?</h6>
-                    <p class="fragment">a system for collection, management and dissemination of USGS flood data </p>
-                    <br>
-                    <br>
-                    <p class="fragment">FEV is the <span class="fragment highlight-green">public</span> data viewing tool for the STN database</p>
-                    <aside class="notes">
-                         <ul>
-                            <li>STN is a system (database and suite of products) that collects, manages and disseminates data during and after hazardous flooding events</li>
-                            <li>FEV is the Flood Event Viewer and it is the public data viewing tool for the STN database</li>
-                            <li></li>
-                        <ul>
-                    </aside>
+                <section>
+                    <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
+                        <h2>Short-Term Network (STN)</h2>
+                        <h6>What is it?</h6>
+
+                         <div style=" width:100%; margin:0 auto;">
+                            <div  style="float:left; width:30%;"> <img  data-src="images/stn_sites.PNG" alt="STN sites network">   </div>
+                            <div style="float:left; width:70%;">
+                                <ul>
+                                 <li><p class="fragment" style="padding-left: 5px;">a system for collection, management and dissemination of USGS flood data </p></li>
+                                <li><p class="fragment">a network of sites where sensors are deployed </p> </li>
+                                </ul>   
+                                <p class="fragment">FEV is the <span class="fragment highlight-green">public</span> data viewing tool for the STN database</p>
+                             </div>
+                        </div>
+    
+                        <aside class="notes">
+                            <ul>
+                                <li>STN is a system (database and suite of products) that collects, manages and disseminates data during and after hazardous flooding events</li>
+                                <li>FEV is the Flood Event Viewer and it is the public data viewing tool for the STN database</li>
+                                <li></li>
+                            <ul>
+                        </aside>
+                     </section>
+
+                    <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
+
+                            <p>a network of sites where sensors are deployed</p>
+                            <div>
+                                <img height="400" data-src="images/stn_map.PNG" alt="Peak summary layer">  
+                            </div>
+
+                    </section>
                 </section>
+
+                
 
                  <section  data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                     <h2>Short-Term Network (STN)</h2>
@@ -91,7 +112,7 @@
 
                     <ul>
                         <li><p class="fragment"><span style="font-weight: bold">short-term</span>, temporary data sensors </p></li>
-                        <li><p class="fragment">supplements USGS 'long-term' station network</p></li>
+                        <li><p class="fragment">supplements USGS long-term station network</p></li>
                     </ul>
 
                     <aside class="notes">
@@ -148,7 +169,6 @@
                      <aside class="notes">
                          <ul>
                             <li>STNWeb is the internal data management application</li>
-                            <li>V2 of STNWeb also released this year - huge improvement and well received</li>
                             <li>Unified the data stream and replaced emailing of excel spreadsheets with manual aggregation</li>
                         <ul>
                     </aside>
@@ -173,8 +193,7 @@
 
                      <aside class="notes">
                          <ul>
-                            <li>Was created 2 years ago in response to the need for downloadable data (actually just metadata - will get to that)</li>
-                            <li>almost obsolete given the fact that FEV now does the same stuff - kept alive for now.</li>
+                            <li>Was created 2 years ago in response to the need for downloadable data</li>
                         <ul>
                     </aside>
                 </section>
@@ -374,9 +393,6 @@
                      <aside class="notes">
                          <ul>
                             <li> Leveraging USGS NWIS (National Water Information System) data to provide a more complete picture of conditions.</li>
-                            <li>We show 8 types of sites on the map (show list), and out of those 8 site types that appear on the map, we allow for any of 4 parameters to display water level. If site has multiple parameters from the whitelist we show the first that returns. </li>
-                            <li>so many streamgages - showing all introduces performance issues - bad UX</li>
-                            <li>We require user to be zoomed in to a particular scale before NWIS RT layer renders</li>
                             <li>Link through to NWISWeb</li>
                         <ul>
                     </aside>
@@ -394,8 +410,6 @@
                      <aside class="notes">
                          <ul>
                             <li> somewhat a hybrid type sensor - tracked in STN DB but actual data is stored in NWIS</li>
-                            <li>Challenges with retrieval after 120 days because of NWIS data management practices</li>
-                            <li>3 parameter codes used, just like NWIS RT gages - Link through to NWISWeb </li>
                         <ul>
                     </aside>
                 </section>
@@ -736,9 +750,10 @@
                      <aside class="notes">
                          <ul>
                             <li>releasing improvements as they become available</li>
+                            <li>challenges:Multi-event display without sacrifice of the user experience</li>
                             <li>Event-centrism is a strength but also a weakness - biggest change will be allowing multiple event selection for comparison purposes</li>
                             <li>complaints: NWIS real-time gage layer takes too long to load (user probably at the wrong scale) </li>
-                            <li>challenges:Multi-event display without sacrifice of the user experience</li>
+                            
                         <ul>
                     </aside>
                 </section>
