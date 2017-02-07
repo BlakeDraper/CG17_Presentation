@@ -43,9 +43,9 @@
                     <h3>Event-based Flood Data Collection and Dissemination</h2>
                     <p>The USGS Flood Event Viewer and Short-Term Network database</p>
                     <p>
-                        <small>Presented by <a href="https://www.linkedin.com/in/blakedraper/">Blake Draper</a> - <a href="https://github.com/usgs-wim">USGS Web Informatics and Mapping (WiM)</a></small>
+                        <small>Coastal GeoTools 2017 | February 8th, 2017<br>Presented by <a href="https://www.linkedin.com/in/blakedraper/">Blake Draper</a>, Software Developer<br><a href="https://github.com/usgs-wim">USGS Web Informatics and Mapping (WiM)</a><br></small>
+                        <br><img height="70" data-src="images/wim_hor_abbr_light.png" alt="WiM logo"  style="margin:30px;background:none;border:none;box-shadow:none;">
                     </p>
-                    <img height="50" data-src="images/wim_hor_abbr_light.png" alt="WiM logo"  style="margin:30px;background:none;border:none;box-shadow:none;">
                     <aside class="notes">
                         <ul>
                             <li> Here to talk about tools that WiM has developed to support USGS flood data collection. </li>
@@ -71,7 +71,7 @@
                     <aside class="notes">
                         <ul>
                             <li>STN is a system (database and suite of products) that collects, manages and disseminates data during and after hazardous flooding events</li>
-                            <li>also, it is literally a network of sites where sensrs are deployed</li>
+                            <li>also, it is literally a network of sites where sensors are deployed</li>
                             <li>FEV is the Flood Event Viewer and it is the public data viewing tool for the STN database</li>
                         <ul>
                     </aside>
@@ -104,7 +104,7 @@
                      <aside class="notes">
                          <ul>
                             <li>STN began as a pilot program to support the flood data collection efforts of the Water Science Centers - there was a need for a tool to make this process easier and more standard</li>
-                            <li>One original goal was to provide a long-term repository for historical high-water marks which would be accessible to outside partners such as ASFPM (among many others)</li>
+                            <li>Another goal was to provide a long-term repository for historical high-water marks which would be accessible to outside partners such as ASFPM (among many others)</li>
                             <li>This pilot program has gained momentum and evolved into an indispensable suite of products that promote good data collection practices, data management and dissemination to partners and the public</li>
                         <ul>
                     </aside>
@@ -129,6 +129,7 @@
                      <aside class="notes">
                          <ul>
                             <li>STNWeb is the internal data management application</li>
+                            <li>where USGS staff records sensor metadata, uploads data files and records HWM elevations</li>
                             <li>Unified the data stream and replaced emailing of excel spreadsheets with manual aggregation</li>
                         <ul>
                     </aside>
@@ -151,7 +152,7 @@
                      <aside class="notes">
                          <ul>
                             <li>graphical user interface for data access</li>
-                            <li>for casual users, or who those who just need a speadsheet</li>
+                            <li>for casual users, or who those who just need a spreadsheet</li>
                             <li>sensor data files not included at this time</li>
                         <ul>
                     </aside>
@@ -383,17 +384,23 @@
                 <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg">
                         <section data-background-image="images/usgs_waves_only_white_600w.gif" data-background-size="contain" data-state="dimbg"> 
                             <h2> <span style="text-transform:initial">Sensor layers</span></h2>
-                            <div style=" width:100%; height:485px; margin:0 auto;">
+                            <div style=" width:100%; height:410px; margin:0 auto;">
                                 <div  style="float:left; width:75%;"> <img data-src="images/sensorLayers.PNG" alt="Sensor layers">     </div>
                                 <div style="float:left; width:25%;"><img data-src="images/sensor.jpg" alt="Storm Tide sensor ">  </div>
                             </div>
-                            <div style=" width:100%; margin:0 auto; "> <p class="no-margin" style="margin:0px;">non-transmitting - must be deployed and retrieved</p></div>
+
+                            <div style=" width:100%; margin:0 auto; "> 
+                                <ul>
+                                    <li>Storm tide, Barometric pressure, Meteorological, Wave height</li>
+                                    <li>non-transmitting - must be deployed and retrieved</li>
+                                </ul>
+                            </div>
                              <aside class="notes">
                                     <ul>
-                                        <li>Storm-time, Barometric pressure, Meteorological, Wave Height </li>
+                                        <li>Storm-tide, Barometric pressure, Meteorological, Wave Height </li>
                                         <li>non-transmitting so must be deployed and retrieved. </li>
                                         <li>begin to appear after they have been entered in STN DB, but do not have data until they are retrieved and data files uploaded</li>
-                                         <li>overlap on map exists because of the Site-based concept of STN - re-usable sites at which instruments are deployed. In some cases multiple instruments are deployed at the same site for the same storm </li>
+                                         <li>overlap on map exists because of the Site-based concept of STN - re-usable sites at which sensors are deployed. In some cases multiple sensors are deployed at the same site for the same storm </li>
                                     <ul>
                                 </aside>        
                          </section>
@@ -442,7 +449,7 @@
 
                         <aside class="notes">
                         <ul>
-                            <li>Observed category also includes HWMs, which are observed and elevation is surveyed after waters have receded</li>
+                            <li>HWMs are observed and elevation is surveyed after waters have receded</li>
                             <li>Effort underway to encourage upload of more historic high-water mark records - Historic HWM upload tool in the internal STNWeb application</li>
                             <li>Historic high-water marks from events dating back as far as 1888</li>
                         <ul>
@@ -597,7 +604,8 @@
                      <aside class="notes">
                          <ul>
                             <li>App was used immediately by the USGS Storm Team on their daily logistics calls to show the progress of work, location of deployments, and the gage levels</li>
-                            <li>Warmed my developer heart to see it in use by USGS top brass to immediately and to such great effect.</li>
+                            <li>Warmed my developer heart to see it in use by USGS top brass so immediately and to such great effect.</li>
+                            <li>Michael Lowry tweet</li>
                             <li>Google analytics not turned on (consequence of rush to release)</li>
                         <ul>
                     </aside>
