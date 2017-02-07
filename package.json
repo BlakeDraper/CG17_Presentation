@@ -1,8 +1,8 @@
 {
-  "name": "gc17_presentation",
+  "name": "cg17",
   "version": "0.0.1",
   "description": "Presentation for Coastal GeoTools 2017 - Flood Event Viewer",
-  "homepage": "https://github.com/BlakeDraper/CG17_Presentation",
+  "homepage": "https://github.com/BlakeDraper/cg17",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
@@ -10,12 +10,12 @@
   },
   "author": {
     "name": "Blake Draper",
-    "email": "hbdraper@usgs.gov",
+    "email": "bdraper@usgs.gov",
     "web": "http://wim.usgs.gov"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/BlakeDraper/CG17_Presentation.git"
+    "url": "git://github.com/BlakeDraper/cg17.git"
   },
   "engines": {
     "node": ">=4.0.0"
